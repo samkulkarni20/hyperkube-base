@@ -19,7 +19,7 @@ steps:
     - tag
 
 - name: docker-publish-head
-  image: plugins/docker
+  image: plugins/docker:20.12
   settings:
     build_args:
     - ARCH=amd64
