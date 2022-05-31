@@ -19,7 +19,7 @@ steps:
     # - tag
 
 - name: docker-publish-head
-  image: samkulkarni20/plugins-docker
+  image: plugins/docker
   settings:
     build_args:
     - ARCH=amd64
@@ -42,7 +42,7 @@ steps:
     - push
 
 - name: docker-publish
-  image: samkulkarni20/plugins-docker
+  image: plugins/docker
   settings:
     build_args:
     - ARCH=amd64
