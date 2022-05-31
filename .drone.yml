@@ -27,6 +27,7 @@ steps:
     custom_dns: 1.1.1.1
     dockerfile: Dockerfile
     tag: ${DRONE_BRANCH/release\//}-head-linux-amd64
+    daemon_off: false
     username:
       from_secret: docker_username
     password:
