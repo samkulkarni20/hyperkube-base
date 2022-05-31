@@ -24,7 +24,7 @@ RUN ln -s /hyperkube /apiserver \
 RUN echo "dash dash/sh boolean false" | debconf-set-selections
 RUN DEBIAN_FRONTEND=noninteractive dpkg-reconfigure dash
 
-# RUN sleep 3600
+RUN sleep 3600
 
 RUN echo CACHEBUST>/dev/null \
     && apt-get update \
